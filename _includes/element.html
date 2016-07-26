@@ -1,9 +1,10 @@
 {% for data_element in site.data.acrsi-data-elements.data_elements %}
 {% if page.element_name == data_element.json_name %}
 
-#{{ data_element.name }} Profile
+<h2>{{ data_element.name }} Profile</h2>
 
 <table><tr><td>{{ data_element.definition }}</td></tr></table>
+
 {% if data_element.enumeration %}
 <table class="table table-striped">
 <thead><tr><th scope='col'>Value Item</th>
