@@ -14,7 +14,7 @@
 			"obligation_code": "Mandatory",
 			"business_rules":[{
 			    "source": "Acreage Crop Reporting", 
-			    "description": "This element contains <a href='Crop_Year.html'>Crop Year</a>, <a href='Originator_Identification_Identifier.html'>Originator Identification Identifier<a>, <a href='Customer_Information.html'>Customer Information</a> and <a href='Farm_Crop_Acreage'>Farm Crop Acreage</a>.",
+			    "description": "This element contains <a href='Crop_Year.html'>Crop Year</a>, <a href='Originator_Identification_Identifier.html'>Originator Identification Identifier</a>, <a href='Customer_Information.html'>Customer Information</a> and <a href='Farm_Crop_Acreage'>Farm Crop Acreage</a>.",
 			    "status": "Active",
 			    "rule_number": ""
 			 }],
