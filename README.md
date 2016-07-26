@@ -1,4 +1,4 @@
-# This is a test site and shouldn't be used for anything.
+# This is a test site.
 
 # Welcome to the ACRSI Data Standards and Collaboration Page
 
