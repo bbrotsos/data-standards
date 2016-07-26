@@ -5,8 +5,7 @@ email: info@usda.gov
 description: > # this means to ignore newlines until "baseurl:"
   The vision of the USDA ACRSI is to “have a common USDA framework for producer commodity reporting in support of USDA programs”.  
 #baseurl: "/Users/bbrotsos/acrsi-projects/acrsi-data/_site" # the subpath of your site, e.g. /blog
-baseurl: ""
-#baseurl: "file:\\\\\\C:\\Documents\\acrsi-data"
+baseurl: "data-standards"
 #url: "http://acrsi.usda.gov" # the base hostname & protocol for your site
 twitter_username: usda
 github_username:  usda
