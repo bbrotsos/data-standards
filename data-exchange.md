@@ -18,7 +18,7 @@ should currently be done based on standards here.  For more information, please 
 
 
 
-###About ACRSI
+<h2>About ACRSI</h2>
 Acreage Crop Reporting Streamlining Initiative (ACRSI) officially started in July 2010. By streamlining and 
 automating reporting, ACRSI will reduce the burden on the producer to participate in USDA programs while 
 simultaneously improving program integrity and data sharing across USDA agencies and programs. 
@@ -28,29 +28,22 @@ farm management system.
 ![Logical Model](assets/img/logical_model.png)
 
 
-###Purpose
+<h2>Purpose</h2>
 This document represents a readable form for the metadata for the entities and attributes included in the 
 Logical Data Model for the ACRSI acreage report transmission.
 
-###Common Acreage Reporting Transmission (CART)
+<h3>Common Acreage Reporting Transmission (CART)</h3>
 
 This file is used to transmit an acreage report from an FSA County Office, an Approved Insurance Provider 
 (AIP), or a producer to the Common Information Management System (CIMS) Clearinghouse.    
 
-####1.3.1	Specifications  
+<h4>1.3.1	Specifications</h4>
 The CART file is a JavaScript Object Notation (JSON) formatted file with optional embedded GeoJSON 
 elements for spatial components. JSON standards can be found at
  https://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml or more generally at json.org. 
  GeoJSON standards can be found at http://geojson.org/geojson-spec.html. 
  Currently, only polygons, including “inclusion” polygons (sometimes called ‘donuts’) are accepted.  
- 
-####1.3.2	Submission  
-Reference document, “ACRSI RMA Intake Service” for detailed information on connecting to the web services,
- submitting the file with appropriate header information, and return file information.
- 
-####1.3.3	Common Acreage Report Transmission (CART)  
-Reference document, “ACRSI Transmission File - Rules” for detailed information on validations performed by 
-the Clearinghouse
+
 
 <a name="xml_json"/>
 
