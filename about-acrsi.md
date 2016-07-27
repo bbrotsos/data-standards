@@ -16,7 +16,8 @@ should currently be done based on standards here.  For more information, please 
 * [Business Process Diagram](#business_process)   
 * [Exchange Content Model](#exchange_content)    
 * [Development Methodology](#development_methodology)  
-  
+
+[View in Microsoft Word](ag-acrsi.iepd/documentation/NIEM-Master-Document-ACRSI.docx)
 
 <a name="Background" />
 

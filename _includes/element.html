@@ -45,6 +45,12 @@
          <td>{{ data_element.max_length }}</td>
       </tr>
       {% endif %}
+      {% if data_element.pattern %}
+      <tr>
+         <td>Pattern</td>
+         <td>{{ data_element.pattern }}</td>
+      </tr>
+      {% endif %}
 
 </table>
 
