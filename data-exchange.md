@@ -9,11 +9,11 @@ should currently be done based on standards here.  For more information, please 
 
 **Quick Jumps**  
 
-*  [ACRSI Business Case Documentation](about-acrsi.html)  
+*  [Acreage Crop Reporting Business Case Documentation](about-acrsi.html)  
 *  [Proposed XML Schema](https://github.com/bbrotsos/data-standards/tree/master/ag-acrsi.iepd)  
 *  [Proposed JSON Schema](https://github.com/bbrotsos/data-standards/tree/master/json-schema)  
 *  [Examples](https://github.com/bbrotsos/data-standards/tree/master/examples)  
-*  [ACRSI Business Rules](data-elements/business_rules.html) 
+*  [Acreage Crop Reporting Business Rules](data-elements/business_rules.html) 
 *  [XML - JSON Mappings](#xml_json) 
 
 

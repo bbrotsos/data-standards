@@ -51,6 +51,12 @@
          <td>{{ data_element.pattern }}</td>
       </tr>
       {% endif %}
+      {% if data_element.precision%}
+      <tr>
+         <td>Decimal Precision</td>
+         <td>{{ data_element.precision }}</td>
+      </tr>
+      {% endif %}
 
 </table>
 

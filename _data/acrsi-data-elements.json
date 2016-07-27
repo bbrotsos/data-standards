@@ -1,27 +1,6 @@
 {
 	"data_elements": 
 	[
-		
-		{
-			"page_name": "Acreage_Submission_File",
-			"name": "Acreage Submission File",
-			"xml_name": "AcreageSubmissionFile",
-			"json_name": "acreageSubmissionFile",
-			"db_name": "",
-			"source": "Acreage Reporting",
-			"object_class": "",
-			"data_type_code": "Container",
-			"obligation_code": "Mandatory",
-			"business_rules":[{
-			    "source": "Acreage Crop Reporting", 
-			    "description": "This element contains <a href='Crop_Year.html'>Crop Year</a>, <a href='Originator_Identification_Identifier.html'>Originator Identification Identifier</a>, <a href='Customer_Information.html'>Customer Information</a> and <a href='Farm_Crop_Acreage'>Farm Crop Acreage</a>.",
-			    "status": "Active",
-			    "rule_number": ""
-			 }],
-			"definition": "A file that is submitted to the crop acreage clearinghouse providing a detailed report regarding the crops planted on a farm, itemized down to the acreage of individual fields and subfields and the individual producer stakeholders."
-        },
-        
-		
 		{
 			"page_name": "Crop_Year",
 			"name": "Crop Year",
@@ -44,34 +23,7 @@
 			 }],
 			"definition": "A period of time (in year) within which the crop is normally grown and designated by the calendar year in which the crop is normally harvested. For crops: <ul><li>Harvested over 2 calendar years, the crop year is the calendar year in which the majority of the crop would have been harvested.</li><li>Grown over more than 2 calendar years, each year in the growing period will be considered as a separate crop year designated by the calendar year in which the crop sustained a loss.</li><li>For which CAT coverage is available, the crop year will be as defined by such coverage.</li></ul>Risk Management Agency's regulations define Crop Year as the period within which the insured crop is normally grown, regardless of whether or not it is actually grown, and designated by the calendar year in which the insured crop is normally harvested, unless otherwise specified in the Crop Provisions."
 			},
-        {
-			"page_name": "Farm_Crop_Acreage",
-			"name": "Farm Crop Acreage",
-			"xml_name": "FarmCropAcreage",
-			"json_name": "farm",
-			"source": "Acreage Crop Reporting",
-			"data_type_code": "Container",
-			"obligation_code": "Mandatory",
-			"children":[
-			{
-			   "data_element": "AdministrativeStateFSACode",
-			   "mandatory": true,
-			},
-			{
-			   "data_element": "AdministrativeCountyFSACode",
-			   "mandatory": true,
-			},
-			{
-			   "data_element": "FarmNumberID",
-			   "mandatory": true,
-			},
-			{
-			   "data_element": "TractCropAcreage",
-			   "mandatory": true,
-			}
-			],
-			"definition": "A Farm within Farm Service Agency (FSA) state and county that contains a number of tracts fields and subfields on which crop acreage details have been reported."
-		},
+        
 		{
 			"page_name": "Administrative_State_Fsa_Code",
 			"name": "Administrative State Farm Service Agency Code",
@@ -141,14 +93,7 @@
 			   }],
 			"definition": "An identification number assigned to all land under control of a particular operator within a particular county.<br/><br/>Each County assigns Farm Numbers independently. As a result, farms in different counties might be assigned the same Farm Number; i.e, a Farm Number might be unique only within a particular county. Thus, to uniquely identify a farm, the State FSA Code and County FSA Code must be specified in combination with the Farm Number."
 			},
-		{
-			"page_name": "Tract_Crop_Acreage",
-			"name": "Tract Crop Acreage",
-			"xml_name": "TractCropAcreage",
-			"json_name": "tract",
-			"data_type_code": "Container",
-			"definition": "A tract of land within a farm that contains a number of fields and subfields on which crop acreage details have been reported."
-},
+		
 
 		{
 			"page_name": "Tract_Number",
@@ -172,15 +117,7 @@
 			   }],
 			"definition": "An identification number assigned to a unit of contiguous land that is under one ownership and that is operated as a farm or part of a farm.  An owner is a person or business having deed to the land.<br/><br/>Tract numbers are assigned by an FSA county office, and are unique within that office''s farms. A Tract Number is used in conjunction with a State FSA Code and County FSA Code for uniqueness.<br/><br/>Tract numbers are not necessarily unique based upon State ANSI Code and County ANSI in instance where the ANSI codes are not the same as the FSA codes."
 			},
-{
-			"page_name": "Field_Crop_Acreage",
-			"name": "Field Crop Acreage",
-			"json_name": "field",
-			"xml_name": "FieldCropAcreage",
-			"data_type_code": "Container",
-			"obligation_code": "Mandatory",
-			"definition": "A field of land within a tract on which groupings of crops can be planted."
-},
+
 		{
 			"page_name": "Field_Number",
 			"name": "Field Number",
@@ -397,7 +334,7 @@
 			"json_name": "originalReportedAcreage",
 			"source": "Acreage Crop Reporting",
 			"data_type_code": "Decimal",
-			"precision": 2,
+			"precision": "8,2",
 			"obligation_code": "Optional",
 			"data_element_example": "103956.15",
 			"representation_class": "Number",
@@ -424,7 +361,7 @@
 			"json_name": "finalReportedAcreage",
 			"source": "Acreage Crop Reporting",
 			"data_type_code": "Decimal",
-			"precision": 2,
+			"precision": "8,2",
 			"obligation_code": "Optional",
 			"data_element_example": "103956.15",
 			"representation_class": "Number",
@@ -440,6 +377,7 @@
 			    "source": "Acreage Crop Reporting",
 			    "description": "Cannot equal <a href='Original_Reported_Acreage'>Original Reported Acreage</a> when <a href='Reported_Acreage_Modified_Indicator.html'>Reported Acreage Modified Indicator</a> = Y"
 			}
+			
 			],
 			"definition": "The final number of acres that were reported."
 		},
@@ -683,7 +621,13 @@
 			"obligation_code": "Optional",
 			"data_element_example": "2015-05-01",
 			"representation_class": "Date",
-			"definition": "The original value for the date that a specific crop was planted."
+			"definition": "The original value for the date that a specific crop was planted.",
+			"business_rules": [{
+			    "source": "Acreage Crop Reporting",
+			    "description": "Must be less than the current date (today)."
+			}
+			],
+			
 		},
 
 		{
@@ -699,6 +643,11 @@
 			"obligation_code": "Optional",
 			"data_element_example": "2015-06-01",
 			"representation_class": "Date",
+			"business_rules": [{
+			    "source": "Acreage Crop Reporting",
+			    "description": "Must be less than the current date (today)."
+			}
+			],
 			"definition": "The final value for the date that a specific crop was planted."
 		},
 
@@ -945,10 +894,10 @@
 			"json_name": "Producer Share Percent",
 			"source": "Acreage Crop Reporting",
 			"data_type_code": "Decimal",
-			"precision": 4,
+			"precision": "5,4",
 			"obligation_code": "Mandatory",
 			"data_element_example": "0.50",
-			"representation_class": "Number",
+			"representation_class": "Percent",
 			"definition": "A Producer's share of a crop and the benefits coming from that crop, expressed as a percentage."
 		},
 
@@ -1503,6 +1452,69 @@
 					"value_definition": "Doctor"
 				}
 			]
-		}
+		},
+		{
+			"page_name": "Acreage_Submission_File",
+			"name": "Acreage Submission File",
+			"xml_name": "AcreageSubmissionFile",
+			"json_name": "acreageSubmissionFile",
+			"db_name": "",
+			"source": "Acreage Reporting",
+			"object_class": "",
+			"data_type_code": "Container",
+			"obligation_code": "Mandatory",
+			"business_rules":[{
+			    "source": "Acreage Crop Reporting", 
+			    "description": "This element contains <a href='Crop_Year.html'>Crop Year</a>, <a href='Originator_Identification_Identifier.html'>Originator Identification Identifier</a>, <a href='Customer_Information.html'>Customer Information</a> and <a href='Farm_Crop_Acreage'>Farm Crop Acreage</a>.",
+			    "status": "Active",
+			    "rule_number": ""
+			 }],
+			"definition": "A file that is submitted to the crop acreage clearinghouse providing a detailed report regarding the crops planted on a farm, itemized down to the acreage of individual fields and subfields and the individual producer stakeholders."
+        }, 
+        {
+			"page_name": "Field_Crop_Acreage",
+			"name": "Field Crop Acreage",
+			"json_name": "field",
+			"xml_name": "FieldCropAcreage",
+			"data_type_code": "Container",
+			"obligation_code": "Mandatory",
+			"definition": "A field of land within a tract on which groupings of crops can be planted."
+},
+        {
+			"page_name": "Farm_Crop_Acreage",
+			"name": "Farm Crop Acreage",
+			"xml_name": "FarmCropAcreage",
+			"json_name": "farm",
+			"source": "Acreage Crop Reporting",
+			"data_type_code": "Container",
+			"obligation_code": "Mandatory",
+			"children":[
+			{
+			   "data_element": "AdministrativeStateFSACode",
+			   "mandatory": true,
+			},
+			{
+			   "data_element": "AdministrativeCountyFSACode",
+			   "mandatory": true,
+			},
+			{
+			   "data_element": "FarmNumberID",
+			   "mandatory": true,
+			},
+			{
+			   "data_element": "TractCropAcreage",
+			   "mandatory": true,
+			}
+			],
+			"definition": "A Farm within Farm Service Agency (FSA) state and county that contains a number of tracts fields and subfields on which crop acreage details have been reported."
+		},
+		{
+			"page_name": "Tract_Crop_Acreage",
+			"name": "Tract Crop Acreage",
+			"xml_name": "TractCropAcreage",
+			"json_name": "tract",
+			"data_type_code": "Container",
+			"definition": "A tract of land within a farm that contains a number of fields and subfields on which crop acreage details have been reported."
+}
 	]
 }
