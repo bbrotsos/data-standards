@@ -13,7 +13,7 @@ should currently be done based on standards here.  For more information, please 
 <table class="table table-striped">
 			<thead>
 				<tr>
-					<th>Title</th>
+					<th>Element Name</th>
 					<th>Description</th>
 					<th>Type</th>
 				</tr>

@@ -553,6 +553,119 @@
 			    "source": "Acreage Crop Reporting",
 			    "description": "Valid values are 3857, 26901, 26902, 26903, 26904, 26905, 26906, 26907, 26908, 26909, 26910, 26911, 26912, 26913, 26914, 26915, 26916, 26917, 26918, 26919, 26920, 26921, 26922, 26923, 32655, 32702, 32755"
 			}],
+			"enumeration": 
+			[
+				{
+					"value_item": "3857",
+					"value_definition": "WGS84 Web Mercator (Auxiliary Sphere)"
+				},
+
+				{
+					"value_item": "26901",
+					"value_definition": "NAD83 UTM Zone 1N"
+				},
+
+				{
+					"value_item": "26902",
+					"value_definition": "NAD83 UTM Zone 2N"
+				},
+				{
+					"value_item": "26903",
+					"value_definition": "NAD83 UTM Zone 3N"
+				},
+				{
+					"value_item": "26904",
+					"value_definition": "NAD83 UTM Zone 4N"
+				},
+				{
+					"value_item": "26905",
+					"value_definition": "NAD83 UTM Zone 5N"
+				},
+				{
+					"value_item": "26906",
+					"value_definition": "NAD83 UTM Zone 6N"
+				},
+				{
+					"value_item": "26907",
+					"value_definition": "NAD83 UTM Zone 7N"
+				},
+				{
+					"value_item": "26908",
+					"value_definition": "NAD83 UTM Zone 8N"
+				},
+				{
+					"value_item": "26909",
+					"value_definition": "NAD83 UTM Zone 9N"
+				},
+				{
+					"value_item": "26910",
+					"value_definition": "NAD83 UTM Zone 10N"
+				},
+				{
+					"value_item": "26911",
+					"value_definition": "NAD83 UTM Zone 11N"
+				},
+				{
+					"value_item": "26912",
+					"value_definition": "NAD83 UTM Zone 12N"
+				},
+				{
+					"value_item": "26913",
+					"value_definition": "NAD83 UTM Zone 13N"
+				},
+				{
+					"value_item": "26914",
+					"value_definition": "NAD83 UTM Zone 14N"
+				},
+				{
+					"value_item": "26915",
+					"value_definition": "NAD83 UTM Zone 15N"
+				},
+				{
+					"value_item": "26916",
+					"value_definition": "NAD83 UTM Zone 16N"
+				},
+				{
+					"value_item": "26917",
+					"value_definition": "NAD83 UTM Zone 17N"
+				},
+				{
+					"value_item": "26918",
+					"value_definition": "NAD83 UTM Zone 18N"
+				},
+				{
+					"value_item": "26919",
+					"value_definition": "NAD83 UTM Zone 19N"
+				},
+				{
+					"value_item": "26920",
+					"value_definition": "NAD83 UTM Zone 20N"
+				},
+				{
+					"value_item": "26921",
+					"value_definition": "NAD83 UTM Zone 21N"
+				},
+				{
+					"value_item": 26922"",
+					"value_definition": "NAD83 UTM Zone 22N"
+				},
+				{
+					"value_item": "26923",
+					"value_definition": "NAD83 UTM Zone 23N"
+				},
+				{
+					"value_item": "32655",
+					"value_definition": "WGS84 UTM Zone 55N"
+				},
+				{
+					"value_item": "32702",
+					"value_definition": "WGS84 UTM Zone 2S"
+				},
+				{
+					"value_item": "32755",
+					"value_definition": "WGS84 UTM Zone 55S"
+				}
+			],
 			"representation_class": "Code",
 			"definition": "A calculation code identifying the geospatial projection standard used for calculating acreage."
 		},
@@ -758,13 +871,65 @@
 			"xml_name": "CroppingPracticeCode",
 			"json_name": "croppingPracticeCode",
 			"source": "Acreage Crop Reporting",
-			"data_type_code": "Integer",
+			"data_type_code": "Code",
 			"obligation_code": "Mandatory",
 			"data_element_example": "108",
 			"representation_class": "Code",
+			"enumeration": 
+			[
+				{
+					"value_item": "4",
+					"value_definition": "Continuous Cropping"
+				},
+                {
+					"value_item": "5",
+					"value_definition": "Summer Fallow"
+				},
+				{
+					"value_item": "6",
+					"value_definition": "Water Fallow"
+				},
+
+				{
+					"value_item": "19",
+					"value_definition": "Following Another Crop"
+				},
+				{
+					"value_item": "30",
+					"value_definition": "Fall Planted"
+				},
+				{
+					"value_item": "46",
+					"value_definition": "Spring Planted"
+				},
+				{
+					"value_item": "108",
+					"value_definition": "Non-Conventional"
+				},
+				{
+					"value_item": "120",
+					"value_definition": "Not Following Another Crop"
+				},
+				{
+					"value_item": "210",
+					"value_definition": "Standard Planting"
+				},
+				{
+					"value_item": "211",
+					"value_definition": "Winter Planted"
+				},
+				{
+					"value_item": "220",
+					"value_definition": "Interplanting"
+				},
+				{
+					"value_item": "997",
+					"value_definition": "No Cropping Practice Specified"
+				}
+			],
 			"definition": "A code identifying the cropping practice applicable for a reported crop/commodity on a field/subfield."
 		},
-		
+		                        
 		{
 			"page_name": "Producer_Share",
 			"name": "Producer Share",

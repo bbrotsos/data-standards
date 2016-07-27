@@ -59,6 +59,12 @@
 <table class="table table-striped">
 <thead><tr><th scope='col'>Source</th>
 <th scope='col'>Description</th></tr></thead>
+   {% if data_element.obligation_code %}
+       <tr>
+         <td>Acreage Crop Reporting</td>
+         <td>This field is {{ data_element.obligation_code }}</td>
+      </tr>
+   {% endif %}
    {% for business_rule in data_element.business_rules %}
       <tr>
          <td>{{ business_rule.source }}</td>
