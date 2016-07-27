@@ -5,7 +5,7 @@ title: Data Exchange
 ---
 
 These are the __proposed__ data elements for Acreage Reporting to USDA.  No production development
-should currently be done based on standards here.  For more information, please see [roadmap](roadmap.html) or provide [feedback](../contribute.html).
+should currently be done based on standards here.  For more information, please see [roadmap](data-standards/roadmap.html) or provide [feedback](data-standardscontribute.html).
 
 **Quick Jumps**  
 
