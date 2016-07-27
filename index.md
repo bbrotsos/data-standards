@@ -6,10 +6,10 @@ layout: home
 
 This is the official site for distributing common USDA Data Standards for Food, Farms and Forests data elements. 
 
-![USDA Future State](Common_Elements.png)
+![USDA Future State Diagram](Common_Elements.png)
 
 The first subdomain is in support of USDA's <a href="about-acrsi.html">Acreage and Crop Reporting and Streamline Initiative (ACRSI) project</a> which 
-has standard data elements and data specification that you can view <a href="data-elements/index.html">here</a>.
+has standard data elements and data specification that can be viewed <a href="data-elements/index.html">here</a>.
 
 USDA is following the best practices and guidances from
 the National Information Exchange Model (NIEM) in establishing this emerging domain.

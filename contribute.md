@@ -13,11 +13,15 @@ To quickly start contributing, review issues <a href="https://github.com/{{ site
 
 This project constitutes a collaborative work ("open source"). Federal employees and members of the public are encouraged to improve the project by contributing.
 
-Contributions can be made, primarily in two ways:
+Contributions can be made, primarily in three ways:
+
+### Easiest
+
+Email <a href="mailto:enterprise.architecture@ocio.usda.gov">the USDA Data Standards team</a> with comments and suggestions.
 
 ### Easy
 
-1. Browse the content at http://www.usda.gov/data_standards
+1. Browse the content at http://usda.github.io/data-standards
 2. Click the "Improve this content" button in the top right corner of any page
 3. Make changes as you would normally
 4. Click "Submit".
